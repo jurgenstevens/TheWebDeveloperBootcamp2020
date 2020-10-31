@@ -9,9 +9,16 @@
     <h1>Forms</h1>
     <form action="/tacos">
         <!-- <form> element represents a document section containing interactive controls for submitting information. -->
-        <input type="text" placeholder="username">
-        <!-- <input> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. -->
-        <input type="password" placeholder="password">
+        <div>
+            <label for="username">Enter a Username:</label>
+            <!-- <label> element represents a caption for an item in a user interface. -->
+            <input id="username" type="text" placeholder="username">
+            <!-- <input> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. -->
+        </div>
+        <div>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="password">
+        </div>
         <input type="color">
         <input type="number" placeholder="age">
     </form>
