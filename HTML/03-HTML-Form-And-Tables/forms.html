@@ -9,6 +9,9 @@
     <h1>Forms</h1>
     <form action="/tacos">
         <!-- <form> element represents a document section containing interactive controls for submitting information. -->
+        <!-- The action attribute is where the form will be submitted to once the submit button is clicked -->
+        <button type="button">Don't Submit Form</button>
+        <!-- Ssetting the type to button takes away its submit functionality -->
         <div>
             <label for="username">Enter a Username:</label>
             <!-- <label> element represents a caption for an item in a user interface. -->
@@ -29,7 +32,12 @@
                 <input id="number" type="number" placeholder="age">
             </label>
         </div>
+        <button>Submit</button>
+        <!-- <button> element represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality. It will submit the form if it is within the form elements. -->
+        <input type="submit" value="Click Me">
     </form>
+    <!--  Outside of a form, no default behavior -->
+    <button>Not Inside Form</button>
 </body>
 
 </html>
