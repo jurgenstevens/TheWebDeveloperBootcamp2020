@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hijacking Searches</title>
+</head>
+
+<body>
+    <h1>Hijacking Searches</h1>
+    <h2>Reddit</h2>
+    <form action="https://www.reddit.com/search" target="blank">
+        <!-- target attribute should equal to "blank" to open page in a new tab -->
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h2>Google</h2>
+    <form action="https://www.google.com/search" target="blank">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h2>YouTube</h2>
+    <form action="https://www.youtube.com/results" target="blank">
+        <input type="text" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+</body>
+
+</html>
