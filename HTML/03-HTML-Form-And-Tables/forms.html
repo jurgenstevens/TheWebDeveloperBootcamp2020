@@ -39,6 +39,19 @@
     </form>
     <!--  Outside of a form, no default behavior -->
     <button>Not Inside Form</button>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <input type="radio" name="size" id="">
+            <input type="radio" name="size" id="">
+            <input type="radio" name="size" id="">
+            <!-- if the radio buttons are grouped by name in order to select a certain thing, then you can do so by naming the name attribute the same -->
+        </p>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
