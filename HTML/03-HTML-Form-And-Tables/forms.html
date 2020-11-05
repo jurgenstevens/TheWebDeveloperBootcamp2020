@@ -47,11 +47,23 @@
         <p>
             <label for="xs">XS:</label>
             <input type="radio" name="size" id="xs" value="xs">
+            <!-- if the radio buttons are grouped by name in order to select a certain thing, then you can do so by naming the name attribute the same -->
             <label for="s">S:</label>
             <input type="radio" name="size" id="s" value="s">
+            <!-- set a value in for the value attribute order for the selected option to actually display the value of the option chosen -->
             <label for="m">M:</label>
             <input type="radio" name="size" id="m" value="m">
-            <!-- if the radio buttons are grouped by name in order to select a certain thing, then you can do so by naming the name attribute the same -->
+        </p>
+        <p>
+            <label for="meal">Select an Entree:</label>
+            <select name="meal" id="meal">
+                <!-- <select> element represents a control that provides a menu of options -->
+                <option value="">--Please Choose an Option--</option>
+                <option value="fish">Fish</option>
+                <option value="poultry">Poultry</option>
+                <option value="beef">Beef</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
         </p>
         <button>Submit</button>
     </form>
