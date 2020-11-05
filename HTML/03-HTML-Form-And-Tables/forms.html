@@ -28,8 +28,8 @@
         </div>
         <div>
             <label for="number">
-                Enter a Number:
-                <input id="number" type="number" placeholder="age" name="num">
+                Enter a Salary Compensation:
+                <input id="number" type="number" placeholder="salary" name="num" min="0" max="500000" step="1000">
             </label>
         </div>
         <button>Submit</button>
@@ -65,6 +65,20 @@
                 <option value="vegetarian">Vegetarian</option>
             </select>
         </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="10" step="5" name="cheese-amount">
+            <!-- <input> elements of type RANGE let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the number input type. Because this kind of widget is imprecise, it shouldn't typically be used unless the control's exact value isn't important. -->
+            <!-- RANGE requires MIN and MAX attribute. STEP can be used for the increment per movement of the dial -->
+        </p>
+        <p>
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea name="comments" id="" cols="30" rows="10">Write your comment here...
+            </textarea>
+            <!-- <textarea> element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. -->
+        </p>
+
         <button>Submit</button>
     </form>
 </body>
