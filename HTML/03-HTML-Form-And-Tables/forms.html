@@ -81,6 +81,24 @@
 
         <button>Submit</button>
     </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">First Name</label>
+        <input type="text" name="first" id="first" required>
+        <!-- The Boolean required attribute which, if present, indicates that the user must specify a value for the input before the owning form can be submitted.  -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+            <!-- minlength and maxlength attributes are used for the min and max length of characters in a field -->
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" required><br>
+            <label for="url">URL:</label>
+            <input type="url">
+        </div>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
