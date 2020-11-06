@@ -10,16 +10,17 @@
         <h1>Race Registration!</h1>
         <div>
             <label for="first">First Name:</label>
-            <input type="text" name="first" id="first">
+            <input type="text" name="first" id="first" required>
 
             <label for="last">Last Name:</label>
-            <input type="text" name="last" id="last">
+            <input type="text" name="last" id="last" required>
         </div>
         <div>
             <label for="race">Select a Race:</label>
             <p>
-                <input type="radio" name="race" id="5k">
-                <label for="5k">Fun Run 5k</label><br>
+                <!-- ids cannot start with numbers -->
+                <input type="radio" name="race" id="funrun">
+                <label for="funrun">Fun Run 5k</label><br>
                 <input type="radio" name="race" id="radio">
                 <label for="half">Half Marathon</label><br>
                 <input type="radio" name="race" id="full">
