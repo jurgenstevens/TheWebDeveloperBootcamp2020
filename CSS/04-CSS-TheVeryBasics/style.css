@@ -1,4 +1,7 @@
 /* use https://htmlcolorcodes.com/ to pick out rgb or hexadecimal color codes */
+h1{
+    color: #FFFFFF;
+}
 
 h2 {
     color: #5FCFFC; 
@@ -21,3 +24,4 @@ body {
     background-color: #cc55ee; 
     /* #cc55ee === #c5e for short because of the duplicate characters */
 }
+
