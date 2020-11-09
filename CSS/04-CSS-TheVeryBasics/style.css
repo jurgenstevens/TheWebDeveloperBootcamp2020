@@ -1,7 +1,11 @@
+/* use https://htmlcolorcodes.com/ to pick out rgb or hexadecimal color codes */
+
 h2 {
-    color: teal;
+    color: #5FCFFC; 
+    /* Hexadecimal color system */
     background-color: rgb(89, 151, 0);
-    /* background-color is the specific to change the background color */
+    /* background-color is the specific to change the background color.
+    Used the RGB color system */
 }
 button {
     color: magenta;
@@ -12,4 +16,8 @@ p {
     color: olive;   
     background: orange; 
     /* background has more than the ability to change the color of the background, i.e. add an image */
+}
+body {
+    background-color: #cc55ee; 
+    /* #cc55ee === #c5e for short because of the duplicate characters */
 }
