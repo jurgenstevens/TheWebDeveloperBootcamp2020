@@ -2,6 +2,7 @@
 h1{
     color: #FFFFFF;
 }
+/* Don't forget to add semi-colons at the end. There are no errors to inform you that you forgot to add a semi-colon on a property declaration. */
 
 h2 {
     color: #5FCFFC; 
