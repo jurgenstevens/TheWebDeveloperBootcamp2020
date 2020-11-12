@@ -8,6 +8,8 @@ h1{
     /* there are many options for text-decoration such as color, location of the line and style of the line */
     letter-spacing: 15px;
     /* Letter-spacing will add space between each letter */
+    font-size: 80px;
+    /* font-size... self explanitory */
 }
 
 p{
