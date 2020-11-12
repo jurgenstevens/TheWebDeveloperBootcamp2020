@@ -1,3 +1,26 @@
 h1{
     text-align: center;
+    /* this will align the property to whatever option is chosen */
+    /* width: 50%; */
+    /* because the width of the h1 is 50% of the page so it is centered within that */
+    font-weight: 700;
+    text-decoration: red underline wavy;
+    /* there are many options for text-decoration such as color, location of the line and style of the line */
+    letter-spacing: 15px;
+    /* Letter-spacing will add space between each letter */
+}
+
+p{
+    font-weight: 100;
+    /* this will decide the boldness of the font; may vary thru browser */
+}
+
+a {
+    text-decoration: none;
+    /* to remove the underline of a link, you can use text-decoration and set it to none */
+}
+
+p {
+    line-height: 2;
+    /* line-height will space out lines in text lines */
 }
