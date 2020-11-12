@@ -10,6 +10,7 @@ h1{
     /* Letter-spacing will add space between each letter */
     font-size: 80px;
     /* font-size... self explanitory */
+    font-family: Segoe UI, Futura;
 }
 
 p{
