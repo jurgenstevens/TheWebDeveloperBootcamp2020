@@ -1,3 +1,15 @@
 * {
-    color: black;
+/*  * is the universal selector and selects EVERYTHING */
+    color: red;
+    background-color: black;
+}
+
+button {
+    /* element selectors such as this one will select all elements from which you write, in this case, this will affect all buttons' css */
+    font-size: 30px;
+}
+
+h1, h2 {
+    /* Selectors List - we can use a comma to combine multiple selectors in a list */
+    color: white
 }
