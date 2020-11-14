@@ -5,7 +5,7 @@
 /* } */ 
 
 body {
-    background-color: #2C666E;
+    background-color: #F0EDEE;
 }
 
 button {
@@ -23,4 +23,15 @@ h1, h2 {
     /* id's should only be used ONCE. Therefore, the signup id will only be used once. That way it singles out one thing because it's a unique identifier */
     background-color: #1D3557;
     color: #F1FAEE;
+}
+
+span {
+    color: #2C666E;
+}
+
+.tag {
+    /* The class selector matches elements based on the contents of their class attribute. */
+    background-color: #07393C;
+    color: #90DDF0;
+    font-size: 16px;
 }
