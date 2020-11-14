@@ -5,7 +5,7 @@
 /* } */ 
 
 body {
-    background-color: #F4F7F5;
+    background-color: #2C666E;
 }
 
 button {
@@ -19,3 +19,8 @@ h1, h2 {
     color: #222823;
 }
 
+#signup {
+    /* id's should only be used ONCE. Therefore, the signup id will only be used once. That way it singles out one thing because it's a unique identifier */
+    background-color: #1D3557;
+    color: #F1FAEE;
+}
