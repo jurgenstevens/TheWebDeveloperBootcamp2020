@@ -35,3 +35,13 @@ span {
     color: #90DDF0;
     font-size: 16px;
 }
+
+.post a {
+    /* descendent selectors change the css to whatever list that nested */
+    color: #2C666E;
+}
+
+footer a {
+    /* ie this descendent selector will change the color of the links within the footer */
+    color: #07393C;
+}
