@@ -45,3 +45,9 @@ footer a {
     /* ie this descendent selector will change the color of the links within the footer */
     color: #07393C;
 }
+
+h2 + button {
+    font-size: 20px;
+    background-color: #800020;
+    /* With ADJACENT SELECTORS you can select only the elements that are immediately preceded by the first written element. In this case it would turn every button following an h2 to the color burgundy */
+}
