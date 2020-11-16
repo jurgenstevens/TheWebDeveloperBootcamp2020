@@ -51,3 +51,8 @@ h2 + button {
     background-color: #800020;
     /* With ADJACENT SELECTORS you can select only the elements that are immediately preceded by the first written element. In this case it would turn every button following an h2 to the color burgundy */
 }
+
+footer > a {
+    /* The DIRECT CHILD SELECTOR will select only the elements that are direct children of the first element. It's a direct descendent and a general descendent further down like adjacent selectors */
+    color: #A8DADC;
+}
