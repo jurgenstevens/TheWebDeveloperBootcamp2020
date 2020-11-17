@@ -56,3 +56,18 @@ footer > a {
     /* The DIRECT CHILD SELECTOR will select only the elements that are direct children of the first element. It's a direct descendent and a general descendent further down like adjacent selectors */
     color: #A8DADC;
 }
+
+input[type="password"] {
+    /* The ATTRIBUTE SELECTOR selects all input elements where the attribute typed  */
+    color: red;
+}  
+
+section.post{
+    /* Doing this form of ATTRIBUTE SELECTOR it will only select the sections with the class of post ie .post */
+    background-color: purple
+}
+
+a[href*="google"]{
+    /* Using *= with ATTRIBUTE SELECTORS it will change only the elements containing a certain work */
+    color: #800020;
+}
