@@ -68,6 +68,12 @@ section.post{
 }
 
 a[href*="google"]{
-    /* Using *= with ATTRIBUTE SELECTORS it will change only the elements containing a certain work */
+    /* Using *= with ATTRIBUTE SELECTORS it will change only the elements containing a certain work. Keep in mind this is CASE SENSITIVE */
     color: #800020;
+}
+
+button:hover {
+    background-color: #E63946;
+    color: #F1FAEE;
+    /*  PSEUDO CLASSES are keywords added to a selector that specifies a special state of the selected elements */
 }
