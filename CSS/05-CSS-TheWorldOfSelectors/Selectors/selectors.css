@@ -72,8 +72,12 @@ a[href*="google"]{
     color: #800020;
 }
 
-button:hover {
+.post button:hover {
     background-color: #E63946;
     color: #F1FAEE;
     /*  PSEUDO CLASSES are keywords added to a selector that specifies a special state of the selected elements */
+}
+
+a:hover {
+    text-decoration: overline;
 }
