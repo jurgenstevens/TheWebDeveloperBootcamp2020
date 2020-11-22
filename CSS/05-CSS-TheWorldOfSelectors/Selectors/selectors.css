@@ -39,6 +39,8 @@ span {
 .post a {
     /* descendent selectors change the css to whatever list that nested */
     color: #2C666E;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a {
@@ -64,7 +66,7 @@ input[type="password"] {
 
 section.post{
     /* Doing this form of ATTRIBUTE SELECTOR it will only select the sections with the class of post ie .post */
-    background-color: purple
+    background-color: rgb(102, 198, 184)
 }
 
 a[href*="google"]{
@@ -79,5 +81,16 @@ a[href*="google"]{
 }
 
 a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
+    /* This will add an overline when you hover over links/ANCHOR TAGS */
+}
+
+.post button:active {
+    background-color: #02C39A;
+    /* This will change the color to the buttons in the post class WHILE  you CLICK and HOLD, once you release, it goes back to its original color. */
+}
+
+.post:nth-of-type(2n) {
+    background-color: #DFE8DC;
+    /* With NTH-OF-TYPE and set to 3n, it will choose every other third. As opposed to just 3 without the n, it would just change the css to the third. For even numbers, it's 2n */
 }
