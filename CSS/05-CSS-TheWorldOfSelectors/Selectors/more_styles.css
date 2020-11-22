@@ -1,0 +1,5 @@
+/* The reason the h1s and h2s will be olivedrab is because order matters and this is the most recent/last in the cascade */
+h1, h2 {
+    color: olivedrab;
+}
+

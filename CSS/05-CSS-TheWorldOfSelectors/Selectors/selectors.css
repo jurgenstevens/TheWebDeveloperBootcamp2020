@@ -109,3 +109,8 @@ p::selection {
     background-color: goldenrod;
     /* The SELECTION PSEUDO ELEMENT will apply to any part of the paragraphs that is highlighted and change the highlight to whatever background is assigned. If you take out the p element and leave it as ::selection, you can do it on any part of the document*/
 }
+
+/* ORDER MATTERS */
+h1, h2 {
+    color: yellow;
+}
