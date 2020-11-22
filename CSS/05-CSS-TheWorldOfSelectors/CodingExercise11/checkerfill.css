@@ -1,0 +1,9 @@
+.square:nth-of-type(2n+1){
+    /* This NTH-OF-TYPE is set up as 2n+1 for the odds. Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type  */
+    background-color: red;
+}
+
+.square:nth-of-type(2n){
+    /* This NTH-OF-TYPE is set up as 2n which is solely for the evens */
+    background-color: black;
+}
