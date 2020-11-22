@@ -94,3 +94,18 @@ a:hover {
     background-color: #DFE8DC;
     /* With NTH-OF-TYPE and set to 3n, it will choose every other third. As opposed to just 3 without the n, it would just change the css to the third. For even numbers, it's 2n */
 }
+
+h2::first-letter {
+    font-size: 40px;
+    /* This PSEUDO ELEMENT will change the color of the first letter in every h2 */
+}
+
+p::first-line{
+    /* This PSEUDO ELEMENT will change the color of the first line of every paragraph */
+    color: purple;
+}
+
+p::selection {
+    background-color: goldenrod;
+    /* The SELECTION PSEUDO ELEMENT will apply to any part of the paragraphs that is highlighted and change the highlight to whatever background is assigned. If you take out the p element and leave it as ::selection, you can do it on any part of the document*/
+}
