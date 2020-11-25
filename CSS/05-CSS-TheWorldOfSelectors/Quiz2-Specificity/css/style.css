@@ -9,3 +9,31 @@ ul li {
     color: blue;
 }
 /* Magenta. The class has priority over element selectors in CSS */
+
+/* Q1: What collor will the button end up? */
+#submit {
+  color: blue;
+}
+ 
+.btn {
+  color: pink;
+}
+ 
+p button.btn {
+  color: purple;
+}
+/* Blue. The ID selector has priority over all */
+
+/* Q3: What color will the h2 end up? */
+.about .heading {
+  color: orange;
+}
+ 
+.about h2.heading {
+  color: pink;
+}
+ 
+section.about .heading {
+  color: yellow;
+}
+/* Yellow. It has the same priority over the one above it, but because it is the last, it gets priority. */
