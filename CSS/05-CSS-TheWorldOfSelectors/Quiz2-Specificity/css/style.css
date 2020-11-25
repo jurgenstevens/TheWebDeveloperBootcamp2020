@@ -1,0 +1,11 @@
+/* Q1: What color with the <li> element be? */
+li {
+    color: orange;
+}
+.nav-link {
+    color: magenta;
+}
+ul li {
+    color: blue;
+}
+/* Magenta. The class has priority over element selectors in CSS */
