@@ -126,3 +126,7 @@ button:hover {
     -CLASS
     -ELEMENT
 */
+button {
+    background-color: magenta !important;
+}
+/* !important will override any css properties */
