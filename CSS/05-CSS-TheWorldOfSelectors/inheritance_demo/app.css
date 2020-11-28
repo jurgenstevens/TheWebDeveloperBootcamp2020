@@ -1,0 +1,17 @@
+body {
+    color: purple;
+}
+
+section {
+    color: aqua;
+}
+/* The h2 will obviously be purple due to inheritance. You can find it by right clicking > Inspect > Element > Scroll down and you'll see 'Inherited from body' which is stated above that the body is set to color: purple */
+
+form {
+    color: teal;
+}
+
+button, input {
+    color: inherit;
+}
+/* The button and input won't automatically inherit the color for the form. But you can set it to inherit whatever it is changed to by typing in 'inherit' in color from whatever nearest parent */
