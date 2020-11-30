@@ -1,0 +1,11 @@
+div {
+    /* to set the WIDTH and a HEIGHT for something; in this case the divs and the lorem ipsum contained in them */
+    width: 200px;
+    height: 200px;
+    background-color: #E5989B;
+}
+
+h1 {
+    background-color: pink;
+    width: 100px;
+}
