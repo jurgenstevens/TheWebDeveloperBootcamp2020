@@ -9,3 +9,21 @@ h1 {
     background-color: pink;
     width: 100px;
 }
+
+#one {
+    background-color: #E5989B;
+    border-width: 5px;
+    /* border-width is commonly used and in order to see it, change its color */
+    border-color: black;
+    /* in order to see the border-color and its width, you must give it style with border-style */
+    border-style: solid;
+    /* the border's css will add on to the width of whatever element is being edited. In this case, the div with the id of one */
+}
+
+#two {
+    background-color: #B5838D;
+}
+
+#three {
+    background-color: #6D6875;
+}
