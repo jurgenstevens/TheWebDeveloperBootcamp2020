@@ -18,6 +18,8 @@ h1 {
     /* in order to see the border-color and its width, you must give it style with border-style */
     border-style: solid;
     /* the border's css will add on to the width of whatever element is being edited. In this case, the div with the id of one */
+    box-sizing: border-box;
+    /* setting box-sizing to border-box will set the border to whatever the element's width and height is originally set to. So if it is 200px, then it will be 200px, not 210px due to the border-width adding 5px to each side. */
 }
 
 #two {
