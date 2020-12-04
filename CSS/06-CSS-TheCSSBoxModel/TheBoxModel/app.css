@@ -38,4 +38,7 @@ h1 {
     width | style | color */
     border-left-style: dotted;
     /* you can do a small individual update/tweak for each style */
+    border-radius: 50%;
+    /* border-radius allows us to set the radius of the corners to be rounder. You can use pixel or percentage value */
+    /* border-radius - 10px will be round corners and 50% will be a full circle. More @ https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
 }
