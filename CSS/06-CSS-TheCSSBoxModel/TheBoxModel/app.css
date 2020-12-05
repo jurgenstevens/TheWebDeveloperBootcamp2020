@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    /* the entire page body's margin is 8px by default. Start off by changing it to zero in the beginning and change from there */
+}    
 div {
     /* to set the WIDTH and a HEIGHT for something; in this case the divs and the lorem ipsum contained in them */
     width: 200px;
@@ -5,12 +9,18 @@ div {
     background-color: #E5989B;
 }
 
+span {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 h1 {
     background-color: pink;
-    width: 100px;
+    width: 200px;
     padding-left: 100px;
     padding-top: 50px;
     /* padding features will add space on whichever side you choose by pixels */
+    margin-bottom: 0;
 }
 
 #one {
@@ -23,6 +33,9 @@ h1 {
     /* the border's css will add on to the width of whatever element is being edited. In this case, the div with the id of one */
     box-sizing: border-box;
     /* setting box-sizing to border-box will set the border to whatever the element's width and height is originally set to. So if it is 200px, then it will be 200px, not 210px due to the border-width adding 5px to each side. */
+    margin-left: 50px;
+    margin-bottom: 100px;
+
 }
 
 #two {
@@ -33,6 +46,7 @@ h1 {
     border-left-width: 8px;
     /* border-left-width will adjust the width of the pixels for the border style. */
     padding-right: 50px;
+    margin: 200px;
 }
 
 #three {
@@ -51,5 +65,7 @@ button {
     /* padding: 20px; - all sides will contain 20px*/
     /* padding: 0 20px; - 0 padding on the top and 20px on sides */
     padding: 10px 20px 30px 40px;
-    /* the padding shorthand property you can apply to all four at once: padding: 5px 1px 0 2px; --- top | right | bottom | left */
+    /* the padding shorthand property you can apply to all four at once: padding: 10px 20px 30px 40px; --- top | right | bottom | left */
 }
+
+/* margin - the space OUTSIDE of the element's borders */
