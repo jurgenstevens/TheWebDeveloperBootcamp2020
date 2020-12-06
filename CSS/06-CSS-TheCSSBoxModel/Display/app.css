@@ -1,0 +1,5 @@
+/* INLINE - Width & Height are ignored. Margin & Padding push elements away horizontally but not vertically. */
+
+/* BLOCK - Block elements break the flow of a document. Width, Height, Margin & Padding are respected. */
+
+/* INBLINE-BLOCK - Behaved like an inline element except Width, Height, Margin & Padding are respected */

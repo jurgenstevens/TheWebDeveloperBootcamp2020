@@ -68,4 +68,8 @@ button {
     /* the padding shorthand property you can apply to all four at once: padding: 10px 20px 30px 40px; --- top | right | bottom | left */
 }
 
-/* margin - the space OUTSIDE of the element's borders */
+/* MARGIN - the space OUTSIDE of the element's borders */
+
+/* INLINE ELEMENTS - fit in alongside other elements. top to bottom. Width & Height are ignored. Margin & padding push elements away horizontally but not vertically */
+
+/* BLOCK LEVEL ELEMENTS - take up a whole block of space. Block elements break the flow of a document. Width, Height, Margin & Padding are respected. */
