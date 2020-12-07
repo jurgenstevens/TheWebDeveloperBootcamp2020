@@ -3,3 +3,30 @@
 /* BLOCK - Block elements break the flow of a document. Width, Height, Margin & Padding are respected. */
 
 /* INBLINE-BLOCK - Behaved like an inline element except Width, Height, Margin & Padding are respected */
+
+/* NOTES
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    /* these would be considered block level because they take up the entire body horizontally such as other headings and paragraphs */
+    /* display: inline; */
+    /* setting the h1's to INLINE will set them to only take up the width of the actual content as opposed to block (entire row) and they don't push anything else to the next line. */
+/* } */
+
+/* NOTES */
+/* span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    /* Spans by default are inline because they do not take up an entire space. Only solely what their width is. They don't push other elements to a separate line. */
+    /* display: block; */
+    /* setting the span to BLOCK will take up an entire line as opposed to its inline default setting and will push anything onto the next line */
+/* } */ 
+
+span {
+    background-color: palevioletred;
+    border: 1px solid black;
+    width: 500px;
+    /* width, height and length WON'T work with this because span is an INLINE element  */
+    padding: 100px;
+    /* PADDING however DOES work with inline elements. But it doesn't push any content. */
+}
