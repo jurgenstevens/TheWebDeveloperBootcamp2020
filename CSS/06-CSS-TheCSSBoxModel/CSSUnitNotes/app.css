@@ -15,3 +15,32 @@ h1 {
     border: 1px solid black;
     line-height: 200%; /* in this case it would be 80px */
 }
+
+h2 {
+    font-size: 2em;
+    /* 2em will inherit its parent's font size and multiply it by two. In this case it will inherit article's font size */
+    margin-left: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    /* this will inherit the font size from the h2 */
+}
+
+article {
+    font-size: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    /* The button's font-size, padding and border-radius will scale to the parent's font size. In this case, the article's font-size */
+    background-color: #2A9D8F;
+    color: white;
+}
+
