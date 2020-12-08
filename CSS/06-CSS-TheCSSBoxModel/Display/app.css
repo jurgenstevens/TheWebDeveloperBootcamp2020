@@ -27,6 +27,28 @@ span {
     border: 1px solid black;
     width: 500px;
     /* width, height and length WON'T work with this because span is an INLINE element  */
-    padding: 100px;
+    padding: 50px;
     /* PADDING however DOES work with inline elements. But it doesn't push any content. */
+    margin: 50px; 
+    /* MARGIN'S the outer layer of the element. The width is respected but the height is not and will not show */
+}
+
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px; /* Width will be respected */
+    height: 200px; /* Height will also be respected and not ignored */
+    padding: 50px; /* Padding will also be respected and applies */
+    margin: 100px; /* This margin will be respected for the h1 unlike the span's margin */
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black; /* Each div is a black element and takes up a whole block which is why up to here they*/
+    display: inline-block;
+    /* if you use plain inline, it will not respect the height and width of olivedab and just be the 5px solid black border */
+    /* but if you use inline-block, then it will make them inline elements while still respecting the height and width, therefor, an inline-block */
+    margin: 50px;
 }
