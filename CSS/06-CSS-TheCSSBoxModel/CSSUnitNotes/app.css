@@ -4,7 +4,14 @@ section {
     height: 800px;
 }
 
-div {
+#percentages {
+    background-color: #6D6875;
+    width: 800px;
+    height: 800px;
+}
+
+
+#percentages div {
     background-color: #E5989B;
     width: 70%;
     height: 20%;
@@ -13,26 +20,28 @@ div {
 h1 {
     font-size: 40px;
     border: 1px solid black;
-    line-height: 200%; /* in this case it would be 80px */
+    line-height: 200%; /* bein this case it would be 80px */
+        /* display: none;  */
+    /* this would make it disappear and is useful with javascript conditionals */
 }
 
-h2 {
+#ems h2 {
     font-size: 2em;
     /* 2em will inherit its parent's font size and multiply it by two. In this case it will inherit article's font size */
     margin-left: 1em;
 }
 
-h3 {
+#ems h3 {
     font-size: 1.5em;
 }
 
-p {
+#ems p {
     font-size: 1em;
     /* this will inherit the font size from the h2 */
 }
 
-article {
-    font-size: 20px;
+#ems {
+    font-size: 15px;
 }
 
 button {
@@ -44,3 +53,26 @@ button {
     color: white;
 }
 
+#ems ul { 
+    font-size: 1.5em;
+}
+
+/* REMs - root ems: Relative to the root html element's font-size. Often easier to work with. If the root font-size is 20px, 1 rem is always 20px, 2rem is always 40px, etc */
+#rems h2{
+    font-size: 3rem;
+    /* this will be 3 times the root element's font size */
+}
+
+#rems h3{
+    font-size: 2rem;
+    /* this will be 2 times the root element's font size */
+}
+
+#rems ul{
+    font-size: 1.5rem;
+    /* this will be .8 the times the root element's font size */
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
