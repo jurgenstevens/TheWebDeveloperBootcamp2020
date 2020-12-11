@@ -7,5 +7,17 @@ section {
 #rgba {
     width: 50%;
     height: 50%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* this rgba is set to white if set to 1 because you're setting the alpha transparency to 1 which is white. If you set the transparency to 0, then it won't show any white which will just show the color behind the div with the rgba id. If I put .5 then it will show half of the transparency*/
+    /* opacity is a property we set on an element that will make sure it governs the entire element's transparencies including its contents AND any descendents */
+    /* only the background color will change, not the lorem ipsum text */
 }
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5; /* writing the opacity this way will affect the entire element as opposed to just the background color */
+    /* even the button will have the same opacity because it is within the element, in this case, the div */
+}
+
