@@ -9,4 +9,35 @@ div {
 
 #middle {
     background-color: #81B29A;
+
+}
+
+#static #middle {
+    position: static; /* STATIC is the default value of an element's position */
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative; /* When an element is RELATIVE it can then be offset relative to itself via the values: top, right, bottom and left. It does not affect the position of other elements. */
+    top: 50px;
+    left: 50px; /* This will move it to the left because you're ADDING 100px to the left of this element's relative position. */
+}
+
+#absolute {
+    position: relative;
+    /* making the absolute section relative will allow the middle div to be abbsolute from the section x/y axis as opposed to the entire page's */
+}
+
+#absolute #middle {
+    position: absolute;
+    /* In layman's terms: this element won't exist once it is ABSOLUTE. It will lay over where it's supposed to exist but doesn't act as a filler. It acts as a ghost. When adding top, bottom, right or left, it will start from the top of the page. */
+    top: 1px;
+    left: 1px;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* FIXED positions are usually for navbars so they remain on a certain fixed position for the user to always have access/visibility of the element */
 }
