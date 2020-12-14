@@ -1,0 +1,28 @@
+h1 {
+    background-color: #2A9D8F;
+    border: 5px solid #264653;
+    color: #EAE2B7;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: #E9C26A;
+}
+h1:nth-of-type(3n) {
+    background-color: #F4A261;
+}
+h1:nth-of-type(4n) {
+    background-color: #E76F51;
+}
+
+/* This will only rotate the first div in the first section */
+section:first-of-type h1:nth-of-type(1) {
+    transform-origin: center; /* this will set the origin of the rotation */
+    transform: rotate(45deg);
+}
