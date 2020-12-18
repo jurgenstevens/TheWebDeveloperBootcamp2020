@@ -1,0 +1,16 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* this is obviously the background image to the section */
+    /* background-image: url("https://www.muralswallpaper.com/app/uploads/the-great-wave-of-kanagawa-art-plain.jpg");
+    background-size: cover;
+    background-position: top; */
+    /* background property will cover all of the the properties above: -image -size -position  just use the / like below*/
+    background: center/100% no-repeat url("https://www.muralswallpaper.com/app/uploads/the-great-wave-of-kanagawa-art-plain.jpg"), #1F1B29;
+    margin: 0 auto; /* this will center it */
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
