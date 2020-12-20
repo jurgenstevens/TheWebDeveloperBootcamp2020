@@ -1,4 +1,12 @@
 img {
     width: 30%;
+    /* margin: 1.6666%; */
     margin: calc(10%/6); /* You can use calc() method to divide the remaining 10% by 6 because of each margin side of each photo. */
+}
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 2px solid #F1F1F1;
+    width: 30%;
+    margin-left: calc(10%/6);
 }
