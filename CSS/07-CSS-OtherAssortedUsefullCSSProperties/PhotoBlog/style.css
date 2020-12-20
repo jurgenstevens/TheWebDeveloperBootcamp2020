@@ -1,0 +1,4 @@
+img {
+    width: 30%;
+    margin: calc(10%/6); /* You can use calc() method to divide the remaining 10% by 6 because of each margin side of each photo. */
+}
