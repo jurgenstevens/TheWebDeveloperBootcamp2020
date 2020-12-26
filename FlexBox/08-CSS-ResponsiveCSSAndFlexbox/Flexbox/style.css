@@ -10,4 +10,12 @@ h1, h2{
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex; /* display flex will turn on the flex properties and lay the elements in the container from left to right */
+    flex-direction: column-reverse; /* flex-direction will choose the direction of the elements */
+    /* Notice that even though the divs are bigger than the container, they don't go past the container's border. That's because the display is set to flex. Once the container's height grows, the divs within the container do as well until they  */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
 }
