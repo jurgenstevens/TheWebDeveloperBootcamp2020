@@ -17,14 +17,14 @@ h1, h2{
     /* justify-content determines how the actual elements of the content is distributed across the MAIN AXIS (LEFT TO RIGHT). Default is flex-start. *not always the left hand side. flex-end: moves content to the end of the main axis ie horizontal. center: obviously centered along the main axis. space-between: will add space between the elements but not between the elements and the container. space-around: gives each element the space between each element and the container. space-evenly: gives the even amount of space between the elements and container*/
     /* flex-wrap: nowrap; */
      /* flex-wrap allows the elements to not bunch up into one block and instead move over to the next one to whichever justify-content setting is currently set. */
-    align-items: center;
-    /* align-items determines how the actual elements of the content is distributed down the CROSS AXIS (TOP TO BOTTOM). flex-start (the default) will set the elements from the top and flex-start from the bottom */
-
+    align-items: flex-start;
+    /* align-items determines how the actual elements of the content is distributed down the CROSS AXIS (TOP TO BOTTOM). flex-start (the default) will set the elements from the top and flex-end from the bottom. baseline will set the elements' base from the content within the elements themselves */
+    flex-wrap: wrap;
+    /* flex-wrap is how you change the direction of the cross axis with "wrap-reverse;" */
 }
 
-#container div {
+#container div { 
     width: 200px;
     height: 200px;
     text-align: center;
-    font-size: 4em;
 }
