@@ -7,7 +7,7 @@ h1, h2{
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex; /* display flex will turn on the flex properties and lay the elements in the container from left to right */
@@ -17,7 +17,7 @@ h1, h2{
     /* justify-content determines how the actual elements of the content is distributed across the MAIN AXIS (LEFT TO RIGHT). Default is flex-start. *not always the left hand side. flex-end: moves content to the end of the main axis ie horizontal. center: obviously centered along the main axis. space-between: will add space between the elements but not between the elements and the container. space-around: gives each element the space between each element and the container. space-evenly: gives the even amount of space between the elements and container*/
     /* flex-wrap: nowrap; */
      /* flex-wrap allows the elements to not bunch up into one block and instead move over to the next one to whichever justify-content setting is currently set. */
-    align-items: flex-end;
+    /* align-items: flex-end; */
     /* align-items determines how the actual elements of the content is distributed down the CROSS AXIS (TOP TO BOTTOM). flex-start (the default) will set the elements from the top and flex-end from the bottom. baseline will set the elements' base from the content within the elements themselves */
     flex-wrap: wrap;
     /* flex-wrap is how you change the direction of the cross axis with "wrap-reverse;" */
@@ -30,13 +30,21 @@ h1, h2{
     width: 200px;
     height: 200px;
     text-align: center;
+    flex-basis: 100px;
+    /* FLEX-BASIS: Defines the initial size of an element before adding additional space is distributed */
 }
 
-div:nth-of-type(5){
-    align-self: flex-start;
-    /* you can pick out individual elements and use align-self to its own position the element from the specific container. You can use flex-start, center or flex-end */
-}
-/* div:nth-of-type(2){
-    align-self: center; */
+/* div:nth-of-type(5){
+    align-self: flex-start; */
     /* you can pick out individual elements and use align-self to its own position the element from the specific container. You can use flex-start, center or flex-end */
 /* } */
+/* div:nth-of-type(2){
+    align-self: center;
+/* } */
+
+
+
+
+/* FLEX-GROW: Controls the amount of available space an element should take up. Accepts a unit-less number value. */
+
+/* FLEX-SHRINK: If items are larger than the container, they shrink according to flex-shrink. */
