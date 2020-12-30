@@ -11,7 +11,7 @@ h1, h2{
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex; /* display flex will turn on the flex properties and lay the elements in the container from left to right */
-    flex-direction: column; /* flex-direction will choose the direction of the elements: row or column */
+    flex-direction: row; /* flex-direction will choose the direction of the elements: row or column */
     /* Notice that even though the divs are bigger than the container, they don't go past the container's border. That's because the display is set to flex. Once the container's height grows, the divs within the container do as well until they  */
     justify-content: center;
     /* justify-content determines how the actual elements of the content is distributed across the MAIN AXIS (LEFT TO RIGHT). Default is flex-start. *not always the left hand side. flex-end: moves content to the end of the main axis ie horizontal. center: obviously centered along the main axis. space-between: will add space between the elements but not between the elements and the container. space-around: gives each element the space between each element and the container. space-evenly: gives the even amount of space between the elements and container*/
@@ -30,7 +30,7 @@ h1, h2{
     width: 200px;
     height: 200px;
     text-align: center;
-    flex-basis: 100px;
+    flex-basis: 200px;
     /* FLEX-BASIS: Defines the initial size of an element before adding additional space is distributed */
 }
 
@@ -38,13 +38,14 @@ h1, h2{
     align-self: flex-start; */
     /* you can pick out individual elements and use align-self to its own position the element from the specific container. You can use flex-start, center or flex-end */
 /* } */
-/* div:nth-of-type(2){
-    align-self: center;
-/* } */
+div:nth-of-type(1){
+    flex-grow: 1;
+    /* FLEX-GROW: Controls the amount of available space an element should take up. Accepts a unit-less number value. If given to a specific element, then that element will take up the available space. If put into an element with sub-elements such as divs in one selection, then those divs will take up the space evenly. */
+
+}
 
 
 
 
-/* FLEX-GROW: Controls the amount of available space an element should take up. Accepts a unit-less number value. */
 
 /* FLEX-SHRINK: If items are larger than the container, they shrink according to flex-shrink. */
