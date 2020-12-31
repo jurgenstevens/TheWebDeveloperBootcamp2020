@@ -29,9 +29,12 @@ h1, h2{
 #container div { 
     width: 200px;
     height: 200px;
+    /* max-width: 300px; */
     text-align: center;
     flex-basis: 200px;
     /* FLEX-BASIS: Defines the initial size of an element before adding additional space is distributed */
+    /* flex-grow: 1; */
+    /* FLEX-GROW for a container will split every div evenly unless you have wrap on, then when you minimize the page, it will end up pushing the divs to the next line. You can set min-width and max-width to not allow the divs to shrink or grow any more than you'd like them to*/
 }
 
 /* div:nth-of-type(5){
@@ -41,11 +44,15 @@ h1, h2{
 div:nth-of-type(1){
     flex-grow: 1;
     /* FLEX-GROW: Controls the amount of available space an element should take up. Accepts a unit-less number value. If given to a specific element, then that element will take up the available space. If put into an element with sub-elements such as divs in one selection, then those divs will take up the space evenly. */
+    flex-shrink: 2;
+    /* FLEX-SHRINK: If items are larger than the container, they shrink according to flex-shrink. */
+}
 
+div:nth-of-type(5){
+    flex-grow: 2;
+    /* If this property wasn't commented out, then it would take the same amount of space as the first div above. Unless it is set at 2 (or any other number) which represents how many times more than 1 it will take in space */
+    
 }
 
 
 
-
-
-/* FLEX-SHRINK: If items are larger than the container, they shrink according to flex-shrink. */
