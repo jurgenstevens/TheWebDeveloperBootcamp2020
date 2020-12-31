@@ -45,7 +45,7 @@ div:nth-of-type(1){
     flex-grow: 1;
     /* FLEX-GROW: Controls the amount of available space an element should take up. Accepts a unit-less number value. If given to a specific element, then that element will take up the available space. If put into an element with sub-elements such as divs in one selection, then those divs will take up the space evenly. */
     flex-shrink: 2;
-    /* FLEX-SHRINK: If items are larger than the container, they shrink according to flex-shrink. */
+    /* FLEX-SHRINK: If items are larger than the container, they shrink according to flex-shrink. If at 0, they don't shrink at all and will be at the flex-basis set size. */
 }
 
 div:nth-of-type(5){
