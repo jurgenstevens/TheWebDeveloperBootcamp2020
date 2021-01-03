@@ -1,0 +1,73 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+/* CSS @media queries are like javascript conditionals. If the property within the parameter is met, THEN change that element to whatever new property. */
+/* @media (max-width: 800px){ */
+    /* h1 { */
+        /* color: purple; */
+        /* width will turn the h1 purple when the h1's width is only at 800px; min-width will turn the h1 purple from 800px and upward; max-width will make the h1 purple from 0px to 800px  */
+    /* } */
+/* } */
+
+@media (min-width: 600px) and (max-width: 800px){
+    h1 {
+        color: purple;
+        /* you can also include the conditional parameteres with (conditional) and (conditional) */
+    }
+}
+
+/* Working with layers and growth in screen size below by using the cascading method */
+/* Start with the default color */
+h1 {
+    color: red;
+}
+
+@media (min-width: 500px){
+    /* when the screen size grows to 500px and above, then the h1 will be orange */
+    h1{
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px){
+    /* when the screen size grows to 1000px and above, then the h1 will be yellow */
+    h1{
+        color: yellow;
+    }
+}
+
+@media (min-width: 1500px){
+    /* when the screen size grows to 1500px and above, then the h1 will be green */
+    h1{
+        color: green;
+    }
+}
+
+@media (min-width: 500px){
+    /* when the screen size grows to 500px and above, then the h1 will be orange */
+    h1{
+        color: orange;
+    }
+}
+
+@media (orientation: landscape) {
+    /* Orientation landscape signifies that it is vertical-desktop as opposed to vertical-mobile */
+    body {
+        background-color: magenta;
+    }
+}
