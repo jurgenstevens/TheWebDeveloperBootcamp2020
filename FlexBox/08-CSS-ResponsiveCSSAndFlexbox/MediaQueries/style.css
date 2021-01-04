@@ -9,12 +9,23 @@ h1 {
 
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 ul,li {
     display: inline;
     margin: 0;
     padding: 0;
+}
+
+ul {
+    border: 1px solid red;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
 }
 /* CSS @media queries are like javascript conditionals. If the property within the parameter is met, THEN change that element to whatever new property. */
 /* @media (max-width: 800px){ */
@@ -65,9 +76,33 @@ h1 {
     }
 }
 
-@media (orientation: landscape) {
-    /* Orientation landscape signifies that it is vertical-desktop as opposed to vertical-mobile */
-    body {
-        background-color: magenta;
+/* @media (orientation: landscape) { */
+    /* Orientation landscape signifies that it is vertical-desktop as opposed to vertical-mobile/ipad */
+    /* body { */
+        /* background-color: black; */
+    /* } */
+/* } */
+
+@media (max-width: 768px){
+    /* we're going to shrink anything between 768px and 577px to font-size 4em */
+    h1 {
+        font-size: 4em;
+    }
+    nav {
+        flex-direction: column;
+        /* Setting the nav's flex-direction to column will stack the listed items */
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        /* However, because the ul has li's, they must be set as column as well */
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    /* we're going to shrink anything below 576px to font-size 2em */
+    h1 {
+        font-size: 2em;
     }
 }
