@@ -47,3 +47,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* change the background dash color to a light blue */
+body {
+	background-color: #6089FF;
+}
+
+/* Set font on entire HTML element */
+html {
+	box-sizing: border-box;
+	/* box-sizing factors in the width of the border when using border and margin sizing */
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* make the panel have a white background */
+.panel {
+	background-color: white;
+}
