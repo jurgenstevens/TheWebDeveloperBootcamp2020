@@ -48,19 +48,30 @@ table {
 	border-spacing: 0;
 }
 
-/* change the background dash color to a light blue */
 body {
+	/* change the background dash color to a light blue */
 	background-color: #6089FF;
+	/* Allow the display to be changed with flexbox then center it horizontally with flexbox */
+	display: flex;
+	justify-content: center;
+	/* then center the items within the panel and give the body a minimum height of 100vh ie 100 Viewport Height (vh)  */
+	align-items: center;
+	min-height: 100vh;
 }
 
-/* Set font on entire HTML element */
 html {
-	box-sizing: border-box;
+	/* Set font on entire HTML element */
 	/* box-sizing factors in the width of the border when using border and margin sizing */
+	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 }
 
-/* make the panel have a white background */
 .panel {
+	/* make the panel have a white background, round out the corners and include padding */
 	background-color: white;
+	border-radius: 10px;
+	padding: 15px 25px;
+	/* make the width 100% but never let the width go past 960px */
+	width: 100%;
+	max-width: 960px;
 }
