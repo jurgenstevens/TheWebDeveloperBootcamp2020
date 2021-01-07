@@ -74,4 +74,8 @@ html {
 	/* make the width 100% but never let the width go past 960px */
 	width: 100%;
 	max-width: 960px;
+	/* allow the panel to have a display of flex which will set it as a row default */
+	display: flex;
+	/* instead of the default being rows via display: flex, set them as columns */
+	flex-direction: column;
 }
