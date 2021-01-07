@@ -76,6 +76,25 @@ html {
 	max-width: 960px;
 	/* allow the panel to have a display of flex which will set it as a row default */
 	display: flex;
-	/* instead of the default being rows via display: flex, set them as columns */
+	/* instead of the default being rows via display: flex, set them as columns. Looks bad with landscape, */
 	flex-direction: column;
+	/* center align everything in the panel and have it all uppercase */
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.pricing-plan {
+	/*  Create border lines to split each plan apart */
+	border-bottom: 1px solid #E1F1FF;
+}
+
+/* Remove the border for the last pricing plan because a third line is not necessary */
+.pricing-plan:last-child {
+	border-bottom: none;
+}
+
+/* Add some margin to add space from each image and the other elements and only allow them to grow to 100% of their original width in size*/
+.pricing-img {
+	margin-bottom: 25px;
+	max-width: 100%;
 }
