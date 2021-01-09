@@ -122,6 +122,12 @@ html {
 	border-top: 1px solid #E1F1FF;
 }
 
+.pricing-features-item:last-child {
+	/* add lines between the last pricing feature item and the pricing price as well */
+	border-bottom: 1px solid #E1F1FF;
+
+}
+
 /* the CSS for the pricing-price text */
 .pricing-price {
 	color: #016FF9;
