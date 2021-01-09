@@ -80,7 +80,7 @@ html {
 	flex-direction: column;
 	/* center align everything in the panel and have it all uppercase */
 	text-align: center;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 .pricing-plan {
@@ -97,4 +97,35 @@ html {
 .pricing-img {
 	margin-bottom: 25px;
 	max-width: 100%;
+}
+
+.pricing-header {
+	/* the CSS for the pricing header which will make it gray, a little bolder and the letters spaced out */
+	color: #888;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.pricing-features {
+	margin: 50px 0 25px;
+	color: #016FF9;
+}
+
+.pricing-features-item {
+	/* give them the same font-weight and letter-spacing as the header. Except a smaller font and some line-height space between each line. */
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.5; 
+	/* then some padding outside the element */
+	padding: 15px;
+	border-top: 1px solid #E1F1FF;
+}
+
+/* the CSS for the pricing-price text */
+.pricing-price {
+	color: #016FF9;
+	display: block;
+	font-size: 32px;
+	font-size: 700;
 }
