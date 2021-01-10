@@ -135,3 +135,28 @@ html {
 	font-size: 32px;
 	font-size: 700;
 }
+
+.pricing-button {
+	border: 1px solid #9DD1FF;
+	border-radius: 10px;
+	color: #348EFE;
+	display: inline-block;
+	padding: 15px 35px; /* space between border and the content/text */
+	text-decoration: none; /* this will remove the underline that links have when they've been visited */
+	margin: 25px 0; /* this will give some space between this element and any others surrounding it */
+	transition: all 200ms ease-in-out; /* this will give the smooth hover effect where it will highlight slowly instead of instantly */
+}
+
+.pricing-button:hover, .pricing-button:focus {
+	background-color: #E1F1FF;
+}
+
+.pricing-button.is-featured {
+	background-color: #48AAFF;
+	color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+	background-color: #269AFF;
+	color: white;
+}
