@@ -148,6 +148,7 @@ html {
 }
 
 .pricing-button:hover, .pricing-button:focus {
+	/* the :focus pseudoclass allows users to tab to this specific element, class or id */
 	background-color: #E1F1FF;
 }
 
