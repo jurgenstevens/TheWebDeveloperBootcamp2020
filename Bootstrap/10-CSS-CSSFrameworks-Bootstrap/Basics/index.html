@@ -18,7 +18,9 @@
             .container-md - 100% wide until medium breakpoint
     -->
     <div class="container-md">
-        <h1>Placeholder</h1>
+        <!-- HEADINGS: Display headings can be used to display a range in sizes from display-1 to display-6 -->
+        <h1 class="display-1">Bootstrap Playground</h1>
+        <h2 class="display-4">Buttons</h2>
         <!-- BUTTONS: There are different Bootstrap buttons than just the ones below. There's also secondary, danger, warning, light, and link. SRC: https://getbootstrap.com/docs/5.0/components/buttons/ -->
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-success">Success</button>
@@ -32,11 +34,24 @@
         <!-- BUTTONS: You can have an active or disabled button. Disable button by including the disable attribute -->
         <button type="button" class="btn btn-success" disabled>Success Disabled</button>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed perferendis exercitationem qui delectus
+        <h2 class="display-4">Typography</h2>
+        <!-- LEAD: Will emphasize the content. Go to Inspect -> Element Styles, it will show only the font-size and font-weight have been changed: font-size: 1.25rem & font-weight: 300 -->
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed perferendis exercitationem qui
+            delectus
             dolorem, ex
             minima dolor deserunt eligendi voluptas rerum aliquam doloremque veritatis laborum molestiae voluptate
             iusto
             enim corporis.</p>
+        <!-- Blockquotes are an element in html. It bolds the content and maybe enlarges it a bit like a quote or a newspaper article -->
+        <blockquote class="blockquote">
+            <!-- MB sets margin-bottom to zero for the element therefore allowing the element below to butt up right under the element with the class mb-0 -->
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laboriosam dicta quaerat
+                tenetur veniam,
+                ratione molestias sit nulla perferendis doloribus inventore eaque, neque qui est commodi sapiente ipsum
+                tempore voluptatem.</p>
+            <!-- BLOCKQUOTE-FOOTER: Adds a grayed out text. Used for Sources or names of people quoting something. Default styles are grayed out and light font-weight. -->
+            <footer class="blockquote-footer">Mr. Lorem Ipsum</footer>
+        </blockquote>
     </div>
 </body>
 
