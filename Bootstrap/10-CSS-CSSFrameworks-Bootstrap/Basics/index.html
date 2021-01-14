@@ -73,7 +73,15 @@
             <button class="btn btn-danger">Left</button>
             <button class="btn btn-success">Right</button>
         </div>
+        <h3>Alerts</h3>
+        <!-- ALERTS: Create an alert with a div using .alert and then adding alert-*insert color*. You can include a heading with .alert-heading INSIDE the div. -->
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong class="alert-heading">Whoops!</strong> Your document did not save.
+            <!-- Add a dismiss button from the docs. Make sure the div class allow the alert-dismissable to move it to the end and add "fade show" as well to fade when closed -->
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
     </div>
+    <!-- The button close button works because of the JavaScript below -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
         crossorigin="anonymous"></script>
