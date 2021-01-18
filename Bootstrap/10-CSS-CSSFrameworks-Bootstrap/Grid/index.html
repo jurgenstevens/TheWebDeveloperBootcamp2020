@@ -69,9 +69,19 @@
             </div>
 
         </div>
-        <img src="./Bootstrap Grid Pics/CHIBW.jpg" alt="">
-        <img src="./Bootstrap Grid Pics/NYCBW.jpg" alt="">
-        <img src="./Bootstrap Grid Pics/LABW.jpg" alt="">
+        <div class="row">
+            <!-- Including no-gutters removes the space between the images -->
+            <div class="col-xl-4 col-md-6">
+                <!-- img-fluid makes an image scale to the size of its container. xl-4 will allow each picture to set the breakpoint sizes and for them to take up xl and above to 4/12 for each picture. For medium each picture will take up 6 units, so it's col-md-6-->
+                <img class="img-fluid" src="./Bootstrap Grid Pics/NYCBW.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid" src="./Bootstrap Grid Pics/CHIBW.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid" src="./Bootstrap Grid Pics/LABW.jpg" alt="">
+            </div>
+        </div>
     </div>
 
 
